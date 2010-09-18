@@ -2,7 +2,7 @@
 
 Summary:	A toolkit to create and control daemons in different ways
 Name:		ruby-%{oname}
-Version:	1.0.10
+Version:	1.1.0
 Release:	%mkrel 1
 License:	BSD and Ruby
 Group:		Development/Ruby
@@ -10,7 +10,6 @@ URL:		http://%{oname}.rubyforge.org/
 Source0:	http://gems.rubyforge.org/gems/%{oname}-%{version}.gem
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	ruby-RubyGems
-Requires:	ruby
 BuildArch:	noarch
 
 %description
@@ -29,6 +28,7 @@ restarting of your processes if they crash.
 %install
 rm -rf %{buildroot}
 gem install --install-dir %{buildroot}/%{ruby_gemdir} --force %{SOURCE0}
+rm -rf %{buildroot}%{ruby_gemdir}/{cache,gems/%{oname}-%{version}/ext}
 
 %clean
 rm -rf %{buildroot}
@@ -36,7 +36,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc %{ruby_gemdir}/doc/%{oname}-%{version}
-%{ruby_gemdir}/cache/%{oname}-%{version}.gem
 %{ruby_gemdir}/gems/%{oname}-%{version}
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
-
