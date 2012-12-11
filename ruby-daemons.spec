@@ -32,3 +32,27 @@ rm -rf %{buildroot}%{ruby_gemdir}/{cache,gems/%{oname}-%{version}/ext}
 %doc %{ruby_gemdir}/doc/%{oname}-%{version}
 %{ruby_gemdir}/gems/%{oname}-%{version}
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
+
+
+%changelog
+* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.1.6-2
++ Revision: 774161
+- mass rebuild of ruby packages against ruby 1.9.1
+
+* Fri Jan 27 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.1.6-1
++ Revision: 769368
+- version update 1.1.6
+
+* Sat Sep 18 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.1.0-1mdv2011.0
++ Revision: 579409
+- new release: 1.1.0
+- don't install gem archive
+- remove manual ruby dependency
+
+* Tue Feb 02 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.10-1mdv2010.1
++ Revision: 499399
+- import ruby-daemons
+
+
+* Mon Feb  1 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.10
+- initial release
