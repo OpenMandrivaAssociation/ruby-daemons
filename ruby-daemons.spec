@@ -3,7 +3,7 @@
 Summary:	A toolkit to create and control daemons in different ways
 Name:		ruby-%{oname}
 Version:	1.1.6
-Release:	2
+Release:	3
 License:	BSD and Ruby
 Group:		Development/Ruby
 URL:		http://%{oname}.rubyforge.org/
