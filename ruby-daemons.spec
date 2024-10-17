@@ -6,7 +6,7 @@ Version:	1.1.6
 Release:	3
 License:	BSD and Ruby
 Group:		Development/Ruby
-URL:		http://%{oname}.rubyforge.org/
+URL:		https://%{oname}.rubyforge.org/
 Source0:	http://gems.rubyforge.org/gems/%{oname}-%{version}.gem
 BuildRequires:	ruby-RubyGems
 BuildArch:	noarch
